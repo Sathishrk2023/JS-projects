@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survery form</title>
+    <link rel="stylesheet" href="survey.css">
+</head>
+<body>
+    <h1>Form</h1>
+    <form action="#" id="form" method="get">
+    <div class="container">
+        <label for="name" id="label_name" class="boldlabel">Name</label>
+        <input type="text" id="name" name="name" >
+    </div>
+    <div class="container">
+        <label for="role" id="label_role" class="boldlabel">Role</label>
+        <select name="role" id="role">
+            <option value="student">Student</option>
+            <option value="emp">Employee</option>
+            <option value="other">Others</option>
+        </select>
+    </div>
+    <div class="container">
+        <label for="age" id="label_age" class="boldlabel">Age</label>
+        <input type="text" id="age" name="age">
+    </div>
+    <div class="container">
+        <label for="email" id="label_email" class="boldlabel">E-mail</label>
+        <input type="email" id="email">
+    </div>
+    <div class="container">
+        <label class="boldlabel">How did you know this job?</label>
+        <label for="Social"><input type="radio" id="Social" value="social media"  name="how" > social media</input>
+        </label>
+        <label for="web" ><input type="radio" id="web" value="website"  name="how">  Website</input>
+        </label>
+        <label for="portal"><input type="radio" id="portal" value="portal"  name="how"> Job portal</input>
+        </label>
+        <label for="refer"><input type="radio" id="refer" value="referal"  name="how"> Referal</input>
+        </label>
+    </div>
+    <div class="container">
+     <label for="" class="boldlabel">Please select your skills</label>
+     <label for="input-1">
+    <input type="checkbox" name="input-1"> Html</input>
+     </label>
+     <label for="input-2">
+   <input type="checkbox" name="input-2"> Css</input>
+     </label>
+     <label for="input-3">
+    <input type="checkbox" name="input-3"> JavaScript</input>
+     </label>
+     <label for="input-4">
+    <input type="checkbox" name="input-4"> Python</input>
+     </label>
+     <label for="input-6">
+    <input type="checkbox" name="input-6"> Bootstrap</input>
+     </label>
+     <label for="input-7">
+    <input type="checkbox" name="input-7"> Github</input>
+     </label>
+    <input type="checkbox" name="input-8"> ReactJs</input>
+     </label>
+     <label for="input-9">
+    <input type="checkbox" name="input-9"> Mysql</input>
+     </label>
+     <label for="input-10">
+    <input type="checkbox" name="input-10"> Linux</input>
+     </label>
+    </div>
+    <div class="container">
+        <button>
+            submit
+        </button>
+    </div>
+</form>
+
+<!-- -------------new form--------------- -->
+<form action="#" id="new" method="get">
+    <div class="container">
+        <input type="text" id="newname" name="newname" placeholder="name">
+    </div> 
+    <div class="container">
+        <input type="email" id="newemail" name="newemail" placeholder="email" disabled>
+    </div>
+    <div class="container">
+        <button type="button" id="newbutton">submit</button>
+    </div>
+
+</form>
+    
+
+    
+</body>
+</html>

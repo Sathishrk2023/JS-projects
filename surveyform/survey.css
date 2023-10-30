@@ -1,0 +1,64 @@
+body {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(95, 245, 95);
+}
+h1 {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
+form {
+    max-width: 500px;
+    background-color: white;
+    margin: 50px auto;
+    padding: 30px 20px;
+    box-shadow: 2px 5px 10px rgba(0,0,0,0.5);
+}
+.container {
+    text-align: left;
+    margin-bottom: 25px;
+}
+.container label {
+    display: block;
+    margin-bottom:10px;
+}
+.container input,.container select {
+    border: 2px solid #777;
+    border-radius: 2px;
+    font-family: inherit;
+    padding: 10px;
+    display: block;
+    width: 95%;
+}
+.container input[type="radio"],.container input[type="checkbox"]  {
+    display: inline-block;
+    width: auto;
+}
+button {
+    background-color: rgb(95, 245, 95);
+    border:1px solid #777;
+    border-radius: 2px;
+    font-family: inherit;
+    font-size: 20px;
+    display: block;
+    width: 100%;
+    padding: 10px 100px;
+    margin-top:20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.boldlabel {
+    font-weight:600;
+}
+@media only screen and (max-width:600pX) {
+    form {
+        max-width: 350px;
+        margin: 50px auto;
+    }
+}
+.container input[disabled] {
+    border-color: red;
+}
