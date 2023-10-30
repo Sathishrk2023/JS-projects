@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Length converter</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: hsl(45, 65%, 62%);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        div.box {
+            background-color: rgb(0, 0, 0,0.8);
+            width: 400px;
+            margin: 200px auto;
+            text-align: center;
+            padding: 20px;
+            height: 500px;
+            border-radius: 10px;
+        }
+        h2 {
+            color: rgb(237, 191, 76);
+            margin-top: 80px;
+            margin-bottom: 20px;
+            font-size: 2em;
+
+        }
+        input {
+            font-size: 25px;
+            margin: 20px;
+            border-radius: 5px;
+            border: none;
+            outline: 3px solid rgb(181, 146, 40);
+            padding: 5px;
+           
+        }
+        button {
+            margin: 20px;
+            background-color: rgb(181, 146, 40);
+            padding: 15px 20px;
+            color: white;
+            font-size: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .ans {
+            color: white;
+            font-size: 30px;
+            margin-top: 50px;
+            word-spacing: 5px;
+         
+      
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>cm  <span style="color: red;">vs</span> inches</h2>
+        <div class="inputdiv"> <input type="text"  id="input"  placeholder="0"></div>
+    <div class="btn">
+        <button type="submit" onclick="myfunction()"> cm to inch</button>
+        <button type="submit" onclick="inchtocm()"> inch to cm</button>
+          
+    </div>
+    <div class="ans" id="ans">  
+
+    </div>
+    </div>
+    <script>
+        function myfunction(){
+        const cmVal = Number(document.getElementById("input").value)
+        const inchVal = cmVal/2.54
+        const ans = document.getElementById("ans")
+        ans.innerHTML = inchVal.toFixed(3)+ " inch"
+      }
+      function inchtocm() {
+        const inch = Number (document.getElementById("input").value)
+        const cm = inch*2.54
+        const ans = document.getElementById("ans")
+        ans.innerHTML=cm.toFixed(3)+ " cm"
+      } 
+    </script>
+    
+</body>
+</html>
