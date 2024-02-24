@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <span>Calculator - 007</span>
+        <div class="inputs">
+            <input type="text"  id="input" name="input">
+        </div>
+        <div class="buttons">
+            <div class="off" onclick="Clear()">ON/OFF</div>
+            <div class="clr" onclick="del()">clr</div>
+            <div class="ac" onclick="Clear()">AC</div>
+            <div class="arith" onclick="display('*')">x</div>
+            <div onclick="display('7')">7</div>
+            <div onclick="display('8')">8</div>
+            <div onclick="display('9')">9</div>
+            <div class="arith" onclick="display('-')">-</div>
+            <div onclick="display('5')">5</div>
+            <div onclick="display('6')">6</div>
+            <div onclick="display('7')">7</div>
+            <div class="arith" onclick="display('/')">%</div>
+            <div onclick="display('1')">1</div>
+            <div onclick="display('2')">2</div>
+            <div onclick="display('3')">3</div>
+            <div class="arith" onclick="display('+')">+</div>
+            <div onclick="display('.')">.</div>
+            <div onclick="display('0')">0</div>
+            <div class="equal" onclick="Calculate()">=</div>
+        </div>
+    </div>
+    <script>
+        
+        function display(num){
+            input.value += num;
+        }
+
+        function Calculate(){
+            try {
+             input.value = eval(input.value);  
+            }
+            catch(err){
+               alert("Syntax Error")
+            }
+        } 
+
+        function Clear(){
+            input.value = "";
+        }
+
+        function del(){
+            input.value = input.value.slice(0,-1);
+        }
+    </script>
+</body>
+</html>
