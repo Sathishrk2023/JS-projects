@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body {
+    background-color: lightblue;
+}
+
+.inputs {
+    width: 300px;
+    margin: 200px auto;
+
+}
+.inputs button {
+    display: block;
+    margin: auto;
+    font-size: 20px;
+    padding: 14px 16px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+}
+#display {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 25px;
+    padding: 20px;
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 50px;
+    text-shadow: 2px 2px 5px white;
+}
